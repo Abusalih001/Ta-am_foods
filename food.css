@@ -1,6 +1,7 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px 40px 0 0;
+    /* padding:20px 40px 0 0; */
+    margin: 0;
     background-image: url("IMG/Thechef.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,19 +21,35 @@ span{
 header{
     display: flex;
     width: 100%;
-    height: 2rem;
+    height: 4rem;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(255, 102, 0);
 }
 header .eat a{
     text-decoration: none;
-    padding-left: 10px;
     background-color: rgba(13, 104, 13, 0.788);
     color: white;
-    padding: 7px 10px;
+    padding: 5px 10px;
     border-radius: 20px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    margin: .9rem;
+}
+span a{
+    text-decoration: none;
+    color: white;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+}
+#second_nav{
+    margin-right: 1rem;
+}
+
+header .eat a:hover{
+    background-color: white;
+    color: green;
+    transition: 1s;
 }
 section{
     margin-top: 10%;
@@ -56,7 +73,32 @@ button{
     font-weight: bolder;
     margin-top: 1%;
 }
+button:hover{
+    background-color: white;
+    color: orangered
+    ;
+    transition: 1s;
+}
+footer{
+    background-color: rgb(110, 102, 102);
+    padding: 1rem;
+    margin-top: 5%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    line-height: 1.5;
+    color: rgb(255, 102, 0);
+}
 @media screen and (max-width: 800px) {
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* padding:20px 40px 0 0; */
+        margin: 0;
+        background-image: url("IMG/Thechef.jpeg");
+        background-repeat: no-repeat;
+        background-size: 260%;
+        background-position: top;
+    }
     #first_nav{
         display: none;
     }
@@ -69,7 +111,7 @@ button{
     }
     header .eat a{
         position: relative;
-        bottom: 2px;
+        bottom: 15px;
         font-size: 2.3vw;
         letter-spacing: 1px;
     }
@@ -78,16 +120,36 @@ button{
     }
 
     p{
-        font-size: 1.5vw;
-        line-height: 1.5;
+        font-size: 1.9vw;
+        line-height: 1.8;
     
     }
     h1{
-        font-size: 3.5vw;
+        font-size: 5.5vw;
     }
     
     button{
-        font-size: 2vw;
+        font-size: 3vw;
     }
+    section{
+        margin-top: .8%;
+        text-align: left;
+        padding-left: 2rem;
+        font-size: 3vw;
+        color: white;
+    }
+
+   header .eat a{
+        border-radius: 1rem;
+        display: block;
+        margin: .2rem;
+        text-align: center;
+        color: white;
+        background-color: rgba(28, 121, 10, 0.952);
+    }
+    header .eat{
+        margin-top: 2rem;
+    }
+    
     
 }

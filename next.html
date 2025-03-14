@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-weight: 500;
+        line-height: 1.3;
+        background-image: url("IMG/Ta'a.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+      }
+      img {
+        width: 5vw;
+      }
+      h2 {
+        padding-left: 2rem;
+      }
+      span {
+        font-size: 1.5rem;
+        position: relative;
+        bottom: 23px;
+        color: white;
+      }
+      span a {
+        text-decoration: none;
+        color: white;
+      }
+      header {
+        display: flex;
+        width: 100%;
+        height: 4rem;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(255, 102, 0);
+      }
+      header .eat a {
+        text-decoration: none;
+        background-color: rgba(13, 104, 13, 0.788);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        margin: 0.9rem;
+      }
+      #second_nav {
+        margin-right: 1rem;
+      }
+
+      header .eat a:hover {
+        background-color: white;
+        color: green;
+        transition: 1s;
+      }
+      #sum_total {
+        background-color: rgb(255, 102, 0);
+        padding: 2rem;
+        /* display: inline-block; */
+        position: absolute;
+        top: 13vw;
+        left: 38vw;
+      }
+      input.inp {
+        border: none;
+        height: 1.2rem;
+        width: 100%;
+        border-radius: 0.1rem;
+        border-bottom: 0.15rem solid green;
+        padding: 0.3rem;
+      }
+      input.inp:hover {
+        height: 1.5rem;
+        transition: 0.2s;
+      }
+      input[type="submit"] {
+        padding: 0.7rem 0.9rem;
+        background-color: green;
+        color: white;
+        border: none;
+        margin-left: 35%;
+        border-radius: 0.4rem;
+      }
+      input[type="submit"]:hover {
+        border-radius: 0;
+        padding: 0.5rem 7rem;
+        margin-left: 5%;
+        transition: 0.5s;
+      }
+      #log{
+        color: green;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #option {
+        font-family: "Courier New", Courier, monospace;
+        margin-top: 0.5rem;
+      }
+      footer{
+    background-color: rgb(110, 102, 102);
+    padding: 1rem;
+    margin-top: 5%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    line-height: 1.5;
+    color: rgb(255, 102, 0);
+}
+      @media screen and (max-width: 600px) {
+        body {
+          background-size: 230%;
+        }
+        #sum_total {
+          padding: 2rem;
+          top: 30vw;
+          left: 20vw;
+        }
+        input.inp {
+          height: 1rem;
+          width: 90%;
+          border-radius: 0.2rem;
+          border-bottom: 0.15rem solid green;
+          padding: 0.35rem;
+        }
+        input[type="submit"]:hover {
+          border-radius: 0.3rem;
+          padding: 0.5rem 5.9rem;
+          margin-left: 0%;
+          transition: 0.7s;
+          color: black;
+          font-family: "Arial Narrow Bold", sans-serif;
+        }
+        #option {
+          font-family: "Courier New", Courier, monospace;
+          margin-top: 0.5rem;
+          font-size: small;
+        }
+        #first_nav {
+          display: none;
+        }
+        span {
+          font-size: 1rem;
+          position: relative;
+          bottom: 15px;
+          right: 10px;
+          color: white;
+        }
+        header .eat a {
+          position: relative;
+          bottom: 15px;
+          font-size: 2.3vw;
+          letter-spacing: 1px;
+        }
+        img {
+          width: 3rem;
+        }
+        h1 {
+          font-size: 3.5vw;
+        }
+        header .eat a {
+          border-radius: 1rem;
+          display: block;
+          margin: 0.2rem;
+          text-align: center;
+          color: white;
+          background-color: rgba(28, 121, 10, 0.952);
+        }
+        header .eat {
+          margin-top: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <h2>
+          <img src="IMG/meal_1.png" alt="" /><span
+            ><a href="index.html">Ta'am</a></span
+          >
+        </h2>
+      </div>
+      <div class="eat" id="first_nav">
+        <a href="">Eat Today</a>
+        <a href="">About Us</a>
+        <a href="">Suscribe</a>
+      </div>
+      <div class="eat" id="second_nav">
+        <a href="next.html">Register</a>
+        <a href="">Order Now</a>
+      </div>
+    </header>
+    <section>
+    <div id="sum_total">
+      <form action="name">
+        <label for="name">Full Name</label><br />
+        <input
+          type="text"
+          class="inp"
+          id="name"
+          required
+          placeholder="Qasim Abdulsammad" /><br /><br />
+        <label for="mail">Email Address</label><br />
+        <input
+          type="email"
+          id="mail"
+          class="inp"
+          required
+          placeholder="example@gmail.com" /><br /><br />
+        <label for="key">Create Password</label><br />
+        <input
+          type="password"
+          id="key"
+          class="inp"
+          required
+          placeholder="Input a strong Password" /><br /><br />
+        <input type="submit" value="Register" />
+      </form>
+      <div id="option">Already have an account ? <a href="" id="log">log in</a></div>
+    </div>
+  </section>
+    <footer>
+      <div>Follow us on: <br>
+        <i class="fa-brands fa-square-facebook"></i> Facebook @www.facebook.com/ta'amfoods <br>
+        <i class="fa-brands fa-square-x-twitter"></i> X @www.X.com/ta'amfoods <br>
+          <i class="fa-brands fa-square-instagram"></i> Instagram @www.Intagram.com/ta'amfoods <br>
+          <i class="fa-brands fa-linkedin"></i> LinkedIn @www.LinkedIn.com/ta'amfoods <br>
+      </div>
+      <div>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-youtube"></i> &copy; Ta'am Food Co. 2025 <br><br>
+        <i class="fa-brands fa-youtube"></i> Watch our live Youtube Channel @www.youtube.com/Ta'amessentials
+      </div>
+    </footer>
+  </body>
+</html>
