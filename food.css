@@ -52,7 +52,7 @@ header .eat a:hover{
     transition: 1s;
 }
 section{
-    margin-top: 10%;
+    margin-top: 1%;
     text-align: left;
     padding-left: 3rem;
     font-size: 2vw;
@@ -80,9 +80,11 @@ button:hover{
     transition: 1s;
 }
 footer{
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
     background-color: rgb(110, 102, 102);
     padding: 1rem;
-    margin-top: 5%;
+    margin-top: 6%;
     display: flex;
     align-items: end;
     justify-content: space-between;
@@ -96,7 +98,7 @@ footer{
         margin: 0;
         background-image: url("IMG/Thechef.jpeg");
         background-repeat: no-repeat;
-        background-size: 260%;
+        background-size: cover;
         background-position: top;
     }
     #first_nav{
@@ -132,7 +134,7 @@ footer{
         font-size: 3vw;
     }
     section{
-        margin-top: .8%;
+        margin-top: 10%;
         text-align: left;
         padding-left: 2rem;
         font-size: 3vw;
@@ -151,5 +153,11 @@ footer{
         margin-top: 2rem;
     }
     
+    footer{
+        margin-top: 35%;
+        display: block;
+        text-align: center;
+        line-height: 1.2;
+    }
     
 }

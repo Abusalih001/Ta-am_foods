@@ -16,6 +16,7 @@
         background-size: cover;
         padding: 0;
         margin: 0;
+        overflow: auto;
       }
       img {
         width: 5vw;
@@ -65,7 +66,7 @@
         padding: 2rem;
         /* display: inline-block; */
         position: absolute;
-        top: 13vw;
+        top: 8vw;
         left: 38vw;
       }
       input.inp {
@@ -89,6 +90,16 @@
         border-radius: 0.4rem;
       }
       input[type="submit"]:hover {
+        padding: 0.7rem 0.9rem;
+        background-color: white;
+        color: green;
+        border: none;
+        margin-left: 35%;
+        border-radius: 0.4rem;
+        transition: .5s;
+        
+      }
+      input[type="submit"]:active{
         border-radius: 0;
         padding: 0.5rem 7rem;
         margin-left: 5%;
@@ -105,7 +116,7 @@
       footer{
     background-color: rgb(110, 102, 102);
     padding: 1rem;
-    margin-top: 5%;
+    margin-top: 31.5%;
     display: flex;
     align-items: end;
     justify-content: space-between;
@@ -114,11 +125,14 @@
 }
       @media screen and (max-width: 600px) {
         body {
-          background-size: 230%;
+          background-size: cover;
+          padding: 0;
+          margin: 0;
+          overflow: auto;
         }
         #sum_total {
           padding: 2rem;
-          top: 30vw;
+          top: 25vw;
           left: 20vw;
         }
         input.inp {
@@ -128,13 +142,24 @@
           border-bottom: 0.15rem solid green;
           padding: 0.35rem;
         }
+        input[type="submit"]{
+          margin-left: 30%;
+        }
         input[type="submit"]:hover {
-          border-radius: 0.3rem;
-          padding: 0.5rem 5.9rem;
-          margin-left: 0%;
-          transition: 0.7s;
-          color: black;
-          font-family: "Arial Narrow Bold", sans-serif;
+          padding: 0.7rem 0.9rem;
+        background-color: white;
+        color: green;
+        border: none;
+        margin-left: 30%;
+        border-radius: 0.4rem;
+        transition: .5s;
+        }
+        input[type="submit"]:active {
+          padding: 0.7rem 0.9rem;
+        background-color: white;
+        color: green;
+        border: none;
+        transition: .5s;
         }
         #option {
           font-family: "Courier New", Courier, monospace;
@@ -174,6 +199,12 @@
         header .eat {
           margin-top: 2rem;
         }
+        footer{
+    margin-top: 100%;
+    display: block;
+    text-align: center;
+    line-height: 1.2;
+}
       }
     </style>
   </head>
