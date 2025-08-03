@@ -1,163 +1,233 @@
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* padding:20px 40px 0 0; */
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+
+
+.bayon-regular {
+  font-family: "Bayon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.tauri-regular {
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+html{
     margin: 0;
-    background-image: url("IMG/Thechef.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 0;
 }
-img{
-    width: 5vw;
+
+
+html,body{
+    font-family: "Tauri", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    background-color: rgb(94, 89, 64);
 }
-h2{
-    padding-left: 2rem;
-}
-span{
-    font-size: 1.5rem;
-    position: relative;
-    bottom: 23px;
-    color: white;
-}
-header{
-    display: flex;
+
+#header-section{
     width: 100%;
-    height: 4rem;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(255, 102, 0);
-}
-header .eat a{
-    text-decoration: none;
-    background-color: rgba(13, 104, 13, 0.788);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    margin: .9rem;
-}
-span a{
-    text-decoration: none;
-    color: white;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-          "Lucida Sans", Arial, sans-serif;
-}
-#second_nav{
-    margin-right: 1rem;
-}
-
-header .eat a:hover{
-    background-color: white;
-    color: green;
-    transition: 1s;
-}
-section{
-    margin-top: 1%;
-    text-align: left;
-    padding-left: 3rem;
-    font-size: 2vw;
-    color: white;
-}
-p{
-    font-size: 1.2vw;
-    line-height: 1.5;
-
-}
-
-button{
-    padding: 8px 10px;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    background-color: rgb(255, 102, 0);
-    font-weight: bolder;
-    margin-top: 1%;
-}
-button:hover{
-    background-color: white;
-    color: orangered
-    ;
-    transition: 1s;
-}
-footer{
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-          "Lucida Sans", Arial, sans-serif;
-    background-color: rgb(110, 102, 102);
-    padding: 1rem;
-    margin-top: 6%;
+    height: 70px;
+    box-sizing: border-box;
+    box-shadow: 5px 10px 20px rgba(231, 174, 49, 0.596);
+    position: fixed;
+    /* bottom: 5px; */
     display: flex;
-    align-items: end;
-    justify-content: space-between;
-    line-height: 1.5;
-    color: rgb(255, 102, 0);
+    left: 0;
+    right: 0;
+    bottom: 89%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(94, 89, 64);
+    z-index: 1;
+    
 }
-@media screen and (max-width: 800px) {
-    body{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        /* padding:20px 40px 0 0; */
-        margin: 0;
-        background-image: url("IMG/Thechef.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-    #first_nav{
-        display: none;
-    }
-    span{
-        font-size: 1rem;
-        position: relative;
-        bottom: 15px;
-        right: 10px;
-        color: white;
-    }
-    header .eat a{
-        position: relative;
-        bottom: 15px;
-        font-size: 2.3vw;
-        letter-spacing: 1px;
-    }
-    img{
-        width: 3rem;
-    }
+#header-section #header-img{
+    width: 10%;
+}
+#header-img img{
+    width: 100px;
+}
+#header-section #header-nav a{
+    text-decoration: none;
+    font-size: large;
+    color: rgb(241, 231, 171);
+    margin: 10px;
+    padding: 5px;
+    line-height: 5px;
+   
 
-    p{
-        font-size: 1.9vw;
-        line-height: 1.8;
+}
+#header-section #header-nav a:hover{
+    border-bottom: 2px solid gold;
     
-    }
-    h1{
-        font-size: 5.5vw;
-    }
-    
-    button{
-        font-size: 3vw;
-    }
-    section{
-        margin-top: 10%;
-        text-align: left;
-        padding-left: 2rem;
-        font-size: 3vw;
-        color: white;
-    }
+}
 
-   header .eat a{
-        border-radius: 1rem;
-        display: block;
-        margin: .2rem;
-        text-align: center;
-        color: white;
-        background-color: rgba(28, 121, 10, 0.952);
-    }
-    header .eat{
-        margin-top: 2rem;
-    }
+#hero-section{
+    width: 100%;
+    height: 650px;
+    background-image: url(./IMG/Hero.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: 250px;
+    background-size: 470px;
+    margin-top: 100px;
+    position: relative;
+    right: 10px;
     
-    footer{
-        margin-top: 35%;
-        display: block;
-        text-align: center;
-        line-height: 1.2;
-    }
     
+}
+#hero-section #hero-content{
+    width: 400px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+#hero-section #hero-content h1{
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: gold;
+    font-size: 35px;
+}
+
+#hero-section #hero-content p{
+    letter-spacing:2px;
+    color: rgb(241, 231, 171);
+}
+
+.custom-btn{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gold;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    color: rgb(72, 63, 14);
+    font-weight: 600;
+}
+
+#dishes-section{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(8, 7, 1);
+    padding-top: 50px;
+    /* display: flex;
+    flex-direction: column; */
+    
+}
+#dishes-section #dishes-section-header{
+    text-align: center;
+    color: white;
+}
+#dishes-section #dishes-section-list{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}
+#dishes-section #dishes-section-list .dishes-section-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: gold;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    transition: .5s;
+}
+#dishes-section #dishes-section-list .dishes-section-content:hover{
+    box-shadow: 5px 10px 20px rgba(248, 173, 11, 0.596), -5px -10px 20px rgba(245, 188, 64, 0.945);
+}
+#dishes-section #dishes-section-list .dishes-section-content h3{
+    font-size: 30px;
+    color: rgb(61, 53, 8);
+}
+#dishes-section #dishes-section-list .dishes-section-content p{
+    margin: 10px;
+    color: rgb(61, 53, 8);
+}
+#dishes-section #dishes-section-list .dishes-section-content .dishes-img{
+    width: 300px;
+    border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+
+}
+#dishes-section #dishes-section-list .dishes-section-content .order-btn{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(61, 53, 8);
+    height: 40px;
+    width: 140px;
+    border-radius: 10px;
+    color: gold;
+    font-weight: 400;
+    margin-bottom: 10px;
+    transition: .5s;
+}
+#dishes-section #dishes-section-list .dishes-section-content .order-btn:hover{
+    box-shadow: 5px 5px 10px rgba(68, 49, 8, 0.596);
+    background-color: gold;
+    color: rgb(61, 53, 8);
+    
+}
+#about-section{
+     width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+#about-section #about-header{
+    text-align: center;
+    width:850px;
+    position: relative;
+    left: 200px;
+    color: rgb(241, 231, 171);
+}
+#about-section #about-content{
+    width: 100%;
+    height: 400px;
+    background-color: gold;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+#about-section #about-content h3{
+    text-align: center;
+    color: rgb(61, 53, 8);
+    font-size: 25px;
+}
+#about-section #about-content #about-content-feedback{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#about-section #about-content .feedback{
+    width: 600px;
+    display: flex;
+    margin-bottom: 10px;
+    background-color: rgb(61, 53, 8);
+}
+#about-section #about-content .feedback img{
+    width: 150px;
+}
+#about-section #about-content .feedback .feedback-text{
+    width: 600px;
+    margin-left: 15px;
+
+
+}
+#about-section #about-content .feedback .feedback-text h4{
+    font-size: 20px;
+    color: gold;
+}
+#about-section #about-content .feedback .feedback-text p{
+    color: rgb(241, 231, 171);
 }
