@@ -31,7 +31,7 @@ html,body{
     width: 100%;
     height: 70px;
     box-sizing: border-box;
-    box-shadow: 5px 10px 20px rgba(231, 174, 49, 0.596);
+    box-shadow: 5px 10px 20px rgba(231, 174, 49, 0.3);
     position: fixed;
     /* bottom: 5px; */
     display: flex;
@@ -57,6 +57,8 @@ html,body{
     margin: 10px;
     padding: 5px;
     line-height: 5px;
+    transition: .5s ease-in-out;
+    
    
 
 }
@@ -108,6 +110,13 @@ html,body{
     border-radius: 10px;
     color: rgb(72, 63, 14);
     font-weight: 600;
+    line-height: 5px;
+    transition: .5s ease-in-out;
+}
+.custom-btn:hover{
+    background-color: rgb(72, 63, 14);
+    color: gold;
+    box-shadow:  5px 10px 20px rgba(231, 174, 49, 0.3);
 }
 
 #dishes-section{
@@ -230,4 +239,58 @@ html,body{
 }
 #about-section #about-content .feedback .feedback-text p{
     color: rgb(241, 231, 171);
+}
+
+
+#contact-section{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(8, 7, 1);
+    text-align: center;
+    padding-top: 20px;
+}
+#contact-section h3{
+    color: gold;
+    font-size: 30px;
+
+}
+#contact-section p{
+    color: gold;
+    font-size: 20px;
+
+}
+#contact-section #contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+#contact-section #contact-form input{
+    width: 700px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 5px;
+
+}
+#contact-section #contact-form #msg{
+    width: 700px;
+    height: 200px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+#contact-section #contact-form input[type="submit"]{
+text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gold;
+    border-radius: 10px;
+    color: rgb(72, 63, 14);
+    font-weight: 600;
+    font-size: 20px;
 }
